@@ -4,12 +4,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.product.row{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product, .visual-section {
+    display: inline-block;
+}
+
 /* visual-section */
 .visual-section {
-    border: 2px solid thistle;
-    width: 250px;
-    height: 361px;
     position: relative;
+}
+
+.image {
+    width: 300px;
+}
+
+.image.background {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.visual-section:hover .image.background {
+    visibility: visible;
 }
 
 .heart {
@@ -18,8 +39,15 @@
     height: 30px;
     text-align: center;
     line-height: 30px;
+    background-color: #fff;
     position: absolute;
+    top: 15px;
     right: 0px;
+}
+
+.labels{
+    position: absolute;
+    bottom: 15px;
 }
 
 .discount, .sustainability {
@@ -35,11 +63,6 @@
 .sustainability {
     background-color: seagreen;
 }
-
-.labels{
-    position: absolute;
-    bottom: 15px;
-}
 /* fine visual-section */
 
 .labels, .text-section {
@@ -47,10 +70,6 @@
 }
 
 /* text-section */
-.text-section {
-    margin-top: 10px;
-}
-
 .brand, .product-description, .price {
     margin-bottom: 2px;
 }
